@@ -1,103 +1,93 @@
-// use scss for styling 
+// use scss for styling
 
-$black:#000000;
-$white : #ffffff;
-$fontSize:"sans-serif";
+$black: #000000;
+$white: #ffffff;
+$fontSize: 'sans-serif';
 
-
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-body{
- 
-    font-family: 'roboto';
-    line-height: 1.1;
-  
+body {
+  font-family: 'roboto';
+  line-height: 1.1;
 }
 
-
-
-
-
-h1{
-    font-size: 30px;
-    font-family: $fontSize;
-    text-align: center;
-    margin: 30px 0 0 0;
+h1 {
+  font-size: 30px;
+  font-family: $fontSize;
+  text-align: center;
+  margin: 30px 0 0 0;
 }
-p{
-  color: $black;   
+p {
+  color: $black;
   font-size: 18px;
   font-family: sans-serif;
-
 }
 ul li {
-    list-style: none;
+  list-style: none;
 }
-input{
-    padding: 5px;
-    min-width: 185px;
-    border-radius: 15px;
-    outline: none;
-    border: 1px solid $black;
+input {
+  padding: 5px;
+  min-width: 185px;
+  border-radius: 15px;
+  outline: none;
+  border: 1px solid $black;
 }
 a {
   text-decoration: none;
   color: $black;
 }
-button{
-    font-size: 15px;
-    cursor: pointer;
-    padding: 6px ;
-    background-color: $black;
-    border-radius: 15px;
-    border: none;
-    color:$white ;
-    margin:0 0 0 8px ;
-    outline: none;
-    &:hover{
-         transform: scale(1.1);
-    }
+button {
+  font-size: 15px;
+  cursor: pointer;
+  padding: 6px;
+  background-color: $black;
+  border-radius: 15px;
+  border: none;
+  color: $white;
+  margin: 0 0 0 8px;
+  outline: none;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
-.display__flex{  
-    display: flex;
-    flex-direction: row;
-    margin: 20px 0 20px 0 ;
+.display__flex {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0 20px 0;
 }
 
+.wrapper {
+  max-width: 300px;
+  margin: 10px auto 0 auto;
 
-.wrapper{
-max-width: 300px;
-margin: 10px auto 0 auto;
-
-
-.todo__list{
+  .todo__list {
     display: flex;
     flex-direction: row;
     align-items: center;
     cursor: pointer;
-}
-.todo__list__text{
+  }
+  .todo__list__text {
     min-width: 200px;
     margin: 20px 0 10px 0;
-    &:hover{
-        background-color: $black;
-        
-        a{
-            color: $white;
-        }
+    &:hover {
+      background-color: $black;
+
+      a {
+        color: $white;
+      }
     }
-}
+  }
 }
 
-.todo__details{
-    text-align: center;
-    margin: 20px 0 0 0 ;
-    button{
-        margin-top: 30px;
-        padding: 20px;
-    }
+.todo__details {
+  text-align: center;
+  margin: 20px 0 0 0;
+  button {
+    margin-top: 30px;
+    padding: 20px;
+  }
 }

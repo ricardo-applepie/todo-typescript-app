@@ -1,12 +1,12 @@
 import React from 'react';
 
-function Button({ text, buttonAction}:any) {
+function Button({ text, buttonAction }: any) {
   // reusable button  component  with props ;
-    return (
-      <React.Fragment>
-        <button onClick={buttonAction}>{text}</button>
-      </React.Fragment>
-    )
+  return (
+    <React.Fragment>
+      <button onClick={buttonAction}>{text}</button>
+    </React.Fragment>
+  );
 }
 
-export default Button
+export default Button;
