@@ -1,5 +1,4 @@
 import { configureStore } from '@reduxjs/toolkit';
-
 import TodoList from '../Reducers/TodoReducer';
 
 const store = configureStore({
